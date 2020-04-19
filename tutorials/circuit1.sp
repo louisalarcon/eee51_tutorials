@@ -11,7 +11,7 @@ Vce		c1 0 		dc 0.2
 .control
 
 dc Vbe 500m 750m 1m
-plot @Q1[ic]
+
 wrdata circuit1.dat @Q1[ic]
 
 .endc
