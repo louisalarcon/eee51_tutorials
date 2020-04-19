@@ -4,12 +4,12 @@
 .include 2N2222A.lib
 .options savecurrents
 
-Q1		c1 b1 0	Q2n2222a
-Vbe		b1 0	0
-Vce		c1 0 0.2
+Q1		c1 b1 0		Q2n2222a
+Vbe		b1 0		dc 0
+Vce		c1 0 		dc 0.2
 
-Q2		c2 b1 0	Q2n2222a
-Vce2	c2 0 2.5
+Q2		c2 b1 0		Q2n2222a
+Vce2	c2 0 		dc 2.5
 
 .control
 
