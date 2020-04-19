@@ -9,7 +9,6 @@ Created on Sun Apr 19 15:15:35 2020
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 import numpy as np
-# from si_prefix import si_format
 import math
 from statistics import mean
 import eee51, g51 
@@ -17,11 +16,6 @@ import eee51, g51
 # load constants and global variables, referenced by g51.*
 g51.init_global_constants()
 
-specs = {
-        'ic' : 1e-3,
-        'vce' : 2.5
-        }
-    
 # run ngspice
 cfg = {
         'spice' : '/Applications/ngspice/bin/ngspice', 
@@ -108,7 +102,7 @@ handles, labels = ax.get_legend_handles_labels()
 ax.legend(handles[::-1], labels[::-1], title='$V_{BE}$', bbox_to_anchor=(1, 1))
 
 eee51.label_plot(plt_cfg, fig, ax)
-plt.savefig('2N2222A_output.pdf')
+plt.savefig('2N2222A_output.png')
 
 # plot the output characteristics and curve-fitted lines to show VA
 fig = plt.figure()
@@ -129,4 +123,5 @@ eee51.add_vline_text(ax, g51.bjt_VA, 0.5, r'$V_A$={:.1f}V'.format(g51.bjt_VA))
 handles, labels = ax.get_legend_handles_labels()
 ax.legend(handles[::-1], labels[::-1], title='$V_{BE}$', bbox_to_anchor=(1, 1))
 eee51.label_plot(plt_cfg, fig, ax)
-plt.savefig('2N2222A_output_VA.pdf')
+plt.savefig('2N2222A_output_VA.png')
+
