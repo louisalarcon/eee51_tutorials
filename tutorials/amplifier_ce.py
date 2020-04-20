@@ -76,7 +76,7 @@ eee51.add_hline_text(ax, vo_dc, -75, \
     r'$V_{OUT}=$' + '{:.2f}V'.format(vo_dc))
 
 eee51.label_plot(plt_cfg, fig, ax)
-plt.savefig('2N2222A_ce_transfer.pdf')
+plt.savefig('2N2222A_ce_transfer.png')
 
 
 # get the gain via the slope of the transfer curve
@@ -116,6 +116,6 @@ ax.text(-100, -100, r'$g_m =\frac{I_C}{n\cdot V_T}=$' + \
 ax.text(-100, -110, r'$a_v=-g_m \cdot (R_c||r_o)=${:.2f}'.format(gain_calc))
 
 eee51.label_plot(plt_cfg, fig, ax)
-plt.savefig('2N2222A_ce_gain.pdf')
+plt.savefig('2N2222A_ce_gain.png')
 
 
