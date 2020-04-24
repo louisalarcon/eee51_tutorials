@@ -71,8 +71,8 @@ Rbias = ( specs['vcc'] - vbe23 ) / iR
 vbe1 = eee51.bjt_find_vbe(specs['ic'], specs['vce'], npn_2n3904['Is'], \
         npn_2n3904['n'], npn_2n3904['VA'])
 
-vbe1_used = 666e-3
-# vbe1_used = vbe1
+# vbe1_used = 666e-3
+vbe1_used = vbe1
 
 # run ngspice
 cfg = {
