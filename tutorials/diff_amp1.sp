@@ -31,7 +31,7 @@ E1		vip vic vid 0	0.5
 E2		vic vin	vid 0	0.5
 
 * differential input
-Vdm 	vid 0		dc 0 sin(0 20m 1k)
+Vdm 	vid 0		dc 0 sin(0 30m 1k)
 
 * common mode input
 Vcm		vic 0		dc 1.2
